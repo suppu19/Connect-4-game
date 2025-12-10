@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="board.css" />
+  </head>
+  <body>
+    <h1>Connect 4</h1>
+    <h2 id="winner"></h2>
+    <div id="board"></div>
+    <div class="name-box">
+      <input type="text" id="name1" placeholder="Enter Player 1" />
+      <input type="text" id="name2" placeholder="Enter Player 2" />
+    </div>
+
+    <div class="Players">
+      <div id="player1" class="player active1">
+        <h2 id="label1">Player 1</h2>
+        <p>Score: <span id="score1">0</span></p>
+      </div>
+      <div id="player2" class="player active2">
+        <h2 id="label2">Player 2</h2>
+        <p>Score: <span id="score2">0</span></p>
+      </div>
+    </div>
+      <button id="playAgain" onclick="playAgain()">Play Again</button>
+    </div>
+    <script src="board.js"></script>
+  </body>
+</html>

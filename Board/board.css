@@ -1,0 +1,134 @@
+body {
+    font-family : arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#board{
+    height: 540px;
+    width: 630px;
+
+     background-color: green;
+     border: 10px solid yellow;
+    
+     
+     margin: 0 auto;
+     display:flex;
+     flex-wrap: wrap;
+
+
+}
+.name-box {
+    height: 30px;
+    width: 200px;
+    font-size: 20px;
+   
+    border-radius: 20px;
+    padding-left: 10px;
+
+    /* position at top-left */
+    position: absolute;
+    margin: 10px;
+    top: 20px;
+    left: 20px;
+}
+
+.playeractive{
+    margin-top: -85px;
+    text-align: 1800px;
+}
+
+button{
+     
+    height: 50px;
+    width: 200px;
+    margin: 50px;
+    font-size: 20px;
+    background-color: green;
+    border-radius: 25px; 
+   
+}
+
+.tile{
+    height: 70px;
+    width: 70px;
+    margin: 5px;
+
+    background-color: white;
+    border-radius: 50%;
+    border: 5px solid yellow;
+
+}
+
+.red-piece{
+    background-color: red;
+
+}
+
+.blue-piece{
+    background-color: blue;
+}
+
+
+
+.Players {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+
+.player {
+    background: white;
+    padding: 20px;
+    height: 80px;
+    width: 100px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+    transition: 0.3s ease;
+}
+
+
+.player h2 {
+    margin-bottom: 8px;
+    font-size: 22px;
+}
+
+
+.player p {
+    font-size: 18px;
+}
+
+.player span {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+.active1 {
+    border: 3px solid #ff4444;   
+    transform: scale(1.05);
+}
+
+.active2 {
+    border: 3px solid #1e90ff;  
+    transform: scale(1.05);
+}
+
+
+button {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
