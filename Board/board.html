@@ -7,25 +7,63 @@
   </head>
   <body>
     <h1>Connect 4</h1>
-    <h2 id="winner"></h2>
+    <!-- <h2 id="winner"></h2> -->
+
     <div id="board"></div>
-    <div class="name-box">
-      <input type="text" id="name1" placeholder="Enter Player 1" />
-      <input type="text" id="name2" placeholder="Enter Player 2" />
-    </div>
+
+        <div class="name-box">
+            <input type="text" id="name1" placeholder="Enter Player 1" />
+            <input type="text" id="name2" placeholder="Enter Player 2" />
+        </div>
 
     <div class="Players">
       <div id="player1" class="player active1">
-        <h2 id="label1">Player 1</h2>
-        <p>Score: <span id="score1">0</span></p>
+            <h2 id="label1">Player 1</h2>
+            <p>Score: <span id="score1">0</span></p>
       </div>
+
       <div id="player2" class="player active2">
-        <h2 id="label2">Player 2</h2>
-        <p>Score: <span id="score2">0</span></p>
+            <h2 id="label2">Player 2</h2>
+            <p>Score: <span id="score2">0</span></p>
       </div>
     </div>
-      <button id="playAgain" onclick="playAgain()">Play Again</button>
+
+    <div class="leaderboard-card">
+      <h2 class="leaderboard-title">🏆 Leaderboard</h2>
+      <ul id="leaderboard-list" class="leaderboard-list"></ul>
+
+      <button class="refresh-btn">Refresh</button>
     </div>
+    <div id="winner-popup" class="popup">
+        <div class="popup-content">
+            <div class="winner-icon">🏆</div>
+            <h2 id="popup-message">Player X Wins!</h2>
+            <button id="close-popup">Play Again</button>
+        </div>
+    </div>
+
+    
+    <div class="timer-container">
+        <div class="timer-btn" id="timerP1">
+            <div class="symbol" id="p1Symbol">🔴</div>
+            <div class="time-box">
+                <span class="player-label" id="p1LabelTimer">Player 1</span>
+                <span class="time" id="p1Time">05:00</span>
+            </div>
+        </div>
+
+        <div class="timer-btn" id="timerP2">
+            <div class="symbol" id="p2Symbol">🟡</div>
+            <div class="time-box">
+                <span class="player-label" id="p2LabelTimer">Player 2</span>
+                <span class="time" id="p2Time">05:00</span>
+            </div>
+        </div>
+    
+    </div>
+    
+ 
+
     <script src="board.js"></script>
   </body>
 </html>
